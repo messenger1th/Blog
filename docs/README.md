@@ -7,3 +7,4 @@ actionText: Know Me →
 actionLink: /guide/
 footer: MIT Licensed | Copyright © 2018-present Evan You
 ---
+<Vssue :title="$title" />

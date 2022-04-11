@@ -105,3 +105,6 @@ dist
 
 # vuepress temp file
 .temp
+
+# hide private information
+secret.js
