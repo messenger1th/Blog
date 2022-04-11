@@ -1,0 +1,178 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\newenvironment{Shaded}{}{}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{#1}}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.49,0.56,0.16}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.53,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.56,0.13,0.00}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.73,0.13,0.13}{\textit{#1}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.02,0.16,0.49}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.40,0.40,0.40}{#1}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.74,0.48,0.00}{#1}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.73,0.40,0.53}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.10,0.09,0.49}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+
+\author{}
+\date{}
+
+\begin{document}
+
+\begin{quote}
+\hypertarget{ux6b27ux51e0ux91ccux5f97ux7b97ux6cd5ux8f97ux8f6cux76f8ux9664ux6cd5uxff09}{%
+\subsection{欧几里得算法（辗转相除法）}\label{ux6b27ux51e0ux91ccux5f97ux7b97ux6cd5ux8f97ux8f6cux76f8ux9664ux6cd5uxff09}}
+
+求最大公因数和最小公倍数
+\end{quote}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{//最大公因数}
+\DataTypeTok{int}\NormalTok{ GCD}\OperatorTok{(}\DataTypeTok{int}\NormalTok{ a}\OperatorTok{,} \DataTypeTok{int}\NormalTok{ b}\OperatorTok{)\{}
+	\ControlFlowTok{if}\OperatorTok{(}\NormalTok{b }\OperatorTok{==} \DecValTok{0}\OperatorTok{)} \ControlFlowTok{return}\NormalTok{ a}\OperatorTok{;}
+	\ControlFlowTok{else} \ControlFlowTok{return}\NormalTok{ GCD}\OperatorTok{(}\NormalTok{b}\OperatorTok{,}\NormalTok{ a}\OperatorTok{\%}\NormalTok{b}\OperatorTok{);}
+\OperatorTok{\}}
+\CommentTok{//最小公倍数}
+\DataTypeTok{int}\NormalTok{ LCM}\OperatorTok{(}\DataTypeTok{int}\NormalTok{ a}\OperatorTok{,}\DataTypeTok{int}\NormalTok{ b}\OperatorTok{)\{}
+    \DataTypeTok{int}\NormalTok{ gcd }\OperatorTok{=}\NormalTok{ GCD}\OperatorTok{(}\NormalTok{a}\OperatorTok{,}\NormalTok{b}\OperatorTok{);}
+    \DataTypeTok{int}\NormalTok{ lcm }\OperatorTok{=}\NormalTok{ a}\OperatorTok{/}\NormalTok{gcd}\OperatorTok{*}\NormalTok{b}\OperatorTok{;}
+    \ControlFlowTok{return}\NormalTok{ lcm}\OperatorTok{;}
+\OperatorTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{ux4e8cux5206ux67e5ux627e}{%
+\subsection{二分查找}\label{ux4e8cux5206ux67e5ux627e}}
+
+\begin{quote}
+\begin{longtable}[]{@{}llll@{}}
+\toprule
+三种： & 普通 & lower\_bound & upper\_bound \\
+\midrule
+\endhead
+找到 & = & 第一个 \textgreater= & 第一个 \textgreater{} \\
+\bottomrule
+\end{longtable}
+\end{quote}
+
+\begin{itemize}
+\item
+  \href{https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/}{34.
+  在排序数组中查找元素的第一个和最后一个位置}
+\end{itemize}
+
+\hypertarget{ux6a21ux62df}{%
+\subsection{模拟}\label{ux6a21ux62df}}
+
+\begin{itemize}
+\item
+  \href{https://leetcode-cn.com/problems/spiral-matrix/}{54. 螺旋矩阵}
+\item
+  \href{https://leetcode-cn.com/problems/spiral-matrix-ii/}{59. 螺旋矩阵
+  II}
+\item
+  \href{https://leetcode-cn.com/problems/spiral-matrix-iii/}{885.
+  螺旋矩阵 III}
+\end{itemize}
+
+\hypertarget{ux6570ux7ec4ux5b57ux7b26ux4e32ux5de6ux79fbux53f3ux79fb}{%
+\subsection{数组\textbackslash 字符串左移\textbackslash 右移}\label{ux6570ux7ec4ux5b57ux7b26ux4e32ux5de6ux79fbux53f3ux79fb}}
+
+\begin{itemize}
+\item
+  \href{https://leetcode-cn.com/problems/zuo-xuan-zhuan-zi-fu-chuan-lcof/}{剑指
+  Offer 58 - II. 左旋转字符串}
+\end{itemize}
+
+\begin{quote}
+先局部后整体是左移，先整体后局部是右移。\\
+其实也可以都先整体，只不过左移就需要调整右边长度为n
+\end{quote}
+
+\hypertarget{ux7ea6ux745fux592bux73af}{%
+\subsection{\texorpdfstring{约瑟夫环
+}{约瑟夫环 }}\label{ux7ea6ux745fux592bux73af}}
+
+\end{document}
