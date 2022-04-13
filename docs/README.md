@@ -8,3 +8,7 @@ actionLink: /guide/
 footer: MIT Licensed | Copyright © 2018-present Evan You
 ---
 <Vssue :title="$title" />
+
+<img :src="$withBase('/favicon.ico')" alt="favicon">
+
+![An image](/favicon.ico)

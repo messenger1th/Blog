@@ -4,6 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
+        "docs:nav": "vuepress nav docs",
         "test": "echo \"Error: no test specified\" && exit 1",
         "docs:dev": "vuepress dev docs --temp .temp",
         "docs:build": "vuepress build docs",
@@ -23,5 +24,8 @@
     "dependencies": {
         "@vssue/api-github-v4": "^1.4.7",
         "@vssue/vuepress-plugin-vssue": "^1.4.8"
+    },
+    "devDependencies": {
+        "vuepress-plugin-auto-sidebar": "^2.3.2"
     }
 }
