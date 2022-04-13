@@ -5,14 +5,6 @@ module.exports = [
       {
         "text": "Life",
         "link": "/Life/"
-      },
-      {
-        "text": "Sub Life",
-        "link": "/Life/subLife/"
-      },
-      {
-        "text": "Sublife1",
-        "link": "/Life/sublife1/"
       }
     ]
   },

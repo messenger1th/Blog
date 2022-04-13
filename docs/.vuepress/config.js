@@ -4,22 +4,22 @@ const nav = require('./nav.js');
 module.exports = {
     base: '/blog/',
     title: 'Epoch',
-    description: 'Epoch',
+    description: 'Epoch BLog',
+
+
+
+    head: [
+        //网站窗口图标ICON
+        ['meta', { name: 'author', content: 'Epoch' }],
+        ['meta', { name: 'keywords', content: 'Epoch\s Blog Basted On VuePress.' }],
+        ['link', { rel: 'icon', href: './logo.ico' }],
+    ],
     plugins: plugins,
     themeConfig: {
-        //LOGO：网站左上角头像
-        logo: '/assets/img/logo.png',
-        head: [
-            //图标ICO
-            ['meta', { name: 'author', content: 'Epoch' }],
-            ['meta', { name: 'keywords', content: 'Epoch\s Blog Basted On VuePress.' }],
-            ['link', { rel: 'icon', href: '/favicon.ico' }],
-        ],
+        //LOGO：页面左上角头像
+        logo: './assets/img/logo.png',
         //导航栏，网站右上角
         nav: nav,
-        // subSidebar: 'auto',
-        //侧边栏，为不同的文件夹而设置
-
         lastUpdated: 'Last Updated',
     }
 }
