@@ -12,11 +12,11 @@ module.exports = {
         //网站窗口图标ICON
         ['meta', { name: 'author', content: 'Epoch' }],
         ['meta', { name: 'keywords', content: 'Epoch\s Blog Basted On VuePress.' }],
-        ['link', { rel: 'icon', href: './logo.ico' }],
+        ['link', { rel: 'icon', href: './assets/img/logo.ico' }],
     ],
     plugins: plugins,
     themeConfig: {
-        //LOGO：页面左上角头像
+        //logo：页面左上角头像
         logo: './assets/img/logo.png',
         //导航栏，网站右上角
         nav: nav,
