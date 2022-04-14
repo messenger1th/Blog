@@ -5,9 +5,6 @@ module.exports = {
     base: '/blog/',
     title: 'Epoch',
     description: 'Epoch BLog',
-
-
-
     head: [
         //网站窗口图标ICON
         ['meta', { name: 'author', content: 'Epoch' }],
@@ -28,8 +25,8 @@ module.exports = {
 
 /*
 //全局侧边栏分组
-sidebar
-{
+sidebar:{
+    {
     title: 'Study',
     path: '/Study/',
     children: [
@@ -43,6 +40,7 @@ sidebar
         // '/Life/',
         '/Life/what is life'
     ],
+}
 }
 */
 
