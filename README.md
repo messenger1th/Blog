@@ -1,9 +1,7 @@
 # 基于GitHub和VuePress的个人博客网站
 
-> 基于VuePress [官方文档](https://vuepress.vuejs.org/zh/)
->
+>  基于VuePress [官方文档](https://vuepress.vuejs.org/zh/)
 > 本网站参考🎉 [视频地址](https://www.bilibili.com/video/av43316513/) 🎉搭建完成，对视频作者表示感谢。
->
 > 以下内容仅供复习使用，如需复刻本项目，请移步上述视频学习。
 
 ## 依赖
