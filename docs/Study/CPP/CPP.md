@@ -1,12 +1,10 @@
----
-title: C++ Primer
----
 
-# 第二章: Variable
+# C++ Primer
+## 第二章: Variable
 
 1. 头文件不应包含`using`声明，因为头文件会被`copy`到所有引用其的文件中。
 
-## decltype(expresssion)
+### decltype(expresssion)
 
 * 类型推导
 * 如果expression含括号，则一定是引用类型。
@@ -19,19 +17,19 @@ decltype(j) b = i; //b是引用
 decltype((i)) c = a; //c是引用类型
 ```
 
-# 第三章：String Vector Array
+## 第三章：String Vector Array
 
-## String
+### String
 
 > 列表初始化和拷贝初始化、直接初始化的区别
 
 `string::size_type`和`size_t`有助于代码的可移植性。 根据不同平台，编译成不同大小。
 
-## Vector
+### Vector
 
 1. `vector`对象能高速增长，除了所有元素都一样的情况，没必要定义时指定容量。
 
-## Array
+### Array
 
 1. 定义（有括号优先括号，其次右向左读）
 
@@ -74,7 +72,7 @@ decltype((i)) c = a; //c是引用类型
 
 
 
-# 第四章：Expression
+## 第四章：Expression
 
 1. 左值和右值
 
@@ -124,7 +122,7 @@ decltype((i)) c = a; //c是引用类型
             char *p = const_cast<char*> (pc)//去除底层const，但是通过p写值是未定义的行为。
             ```
 
-# 第六章：Function
+## 第六章：Function
 
 1. `initializer_list<>`初始化列表
 
@@ -195,7 +193,7 @@ decltype((i)) c = a; //c是引用类型
 
    
 
-# 第七章：Class
+## 第七章：Class
 
 1. 对于公共代码使用私有功能函数
 
@@ -354,7 +352,7 @@ decltype((i)) c = a; //c是引用类型
 
 * `mutable`可以突破函数`const`的限制, 任何时候都可改;
 
-# 第八章: IO Library
+## 第八章: IO Library
 
 1. 宽字符版本输入输出流 `wcin`, `wcout`,`wcerr`,与原版本在同一个头文件.
 
@@ -381,7 +379,7 @@ decltype((i)) c = a; //c是引用类型
    1. `open`和`close`, 文件流对象被销毁时.自动调用`close`
    2. string流 :`istringstream`, `ostringstream`
 
-# 第九章: Sequential Container
+## 第九章: Sequential Container
 
 1. 顺序容器类型
 
@@ -404,7 +402,7 @@ decltype((i)) c = a; //c是引用类型
    vec.reverse(n); //指定vec分配n个元素的内存空间. 此时capacity = n; 
    ```
 
-# 第十章: Generic Algorithm
+## 第十章: Generic Algorithm
 
 1. 只要元素支持相关操作,例如`+`, `==`即可调用泛型算法.
 
@@ -489,7 +487,7 @@ decltype((i)) c = a; //c是引用类型
 
    链表的特有操作会改变容器
 
-# 第十一章: Associative Container
+## 第十一章: Associative Container
 
 1. 8种
 
@@ -528,7 +526,7 @@ decltype((i)) c = a; //c是引用类型
 
 3. 无序容器桶管理
 
-# 第十二章: Dynamic Memory
+## 第十二章: Dynamic Memory
 
 1. 动态内存与智能指针
 
@@ -582,7 +580,7 @@ decltype((i)) c = a; //c是引用类型
    3. 拷贝和填充分配但未构造的内存
 
 
-# 第十三章: Copy Control
+## 第十三章: Copy Control
 
 1. 拷贝构造函数和拷贝赋值运算符
 
@@ -654,6 +652,6 @@ decltype((i)) c = a; //c是引用类型
 
 7. 五个拷贝控制成员应该看成一个整体.
 
-# 第十四章: 
+## 第十四章: 
 
 * 转换构造和类型转换可能产生二义性，因此推荐转换构造
