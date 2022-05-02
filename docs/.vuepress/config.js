@@ -4,9 +4,10 @@ const nav = require('./nav.js');
 module.exports = {
     base: '/blog/',
     title: 'Epoch',
-    description: 'Epoch BLog',
+    description: 'Epoch\'s Blog',
     head: [
         //网站窗口图标ICON
+        ['meta', { name: 'description', content: 'Epoch\'s Blog' }],
         ['meta', { name: 'author', content: 'Epoch' }],
         ['meta', { name: 'keywords', content: 'Epoch\s Blog Basted On VuePress.' }],
         ['link', { rel: 'icon', href: './assets/img/logo.ico' }],
