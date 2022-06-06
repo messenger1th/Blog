@@ -20,5 +20,5 @@ module.exports = {
         collapse: {
             open: true,
         },
-    }
+    },
 }

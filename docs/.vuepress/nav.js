@@ -1,21 +1,32 @@
-module.exports = [{
-        "text": "Study",
-        "items": [{
-                "text": "CPP",
-                "link": "/Study/CPP/CPP.md"
+module.exports = [
+    { text: "CPP", link: '/CPP/C++ Primer' },
+    { text: "MySQL", link: "/MySQL/" },
+
+    {
+        text: "Internet",
+
+        items: [{
+                "text": "Frame",
+                "link": "/Internet/Frame",
             },
             {
-                "text": "Linux",
-                "link": "/Study/Linux/"
+                "text": "HTTP",
+                "link": "/Internet/HTTP/Http"
+            },
+            {
+                "text": "TCP&IP",
+                "link": "/Internet/TCP&IP/IP"
             },
         ]
-    },
-    {
+    }, {
         "text": "others",
         "items": [{
             "text": "Git",
             "link": "/others/Git"
-        }]
+        }, {
+            "text": "Binary Tree Traversal",
+            "link": "/others/Binary Tree Traversal"
+        }, ]
     }
 ];
 
